@@ -1,7 +1,7 @@
 {
     "builds":[
         {
-            "src":".",
+            "src":"manage.py",
             "use":"@vercel/python",
             "config":{"maxLambdaSize":"15mb", "runTime":"python3.9"}
         }
@@ -9,7 +9,7 @@
     "routes":[
         {
             "src":"/(.*)",
-            "dest":"api_rest_lab/wsgi.py"
+            "dest":"manage.py"
         }
     ]
 }
