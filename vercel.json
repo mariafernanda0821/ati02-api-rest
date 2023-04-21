@@ -3,7 +3,7 @@
         {
             "src":"api_rest_lab/wsgi.py",
             "use":"@vercel/python",
-            "config":{"maxLambdaSize":"15mb", "runTime":"python3.9"}
+            "config":{"maxLambdaSize":"15mb", "runtime":"python3.9"}
         }
     ],
     "routes":[
