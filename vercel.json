@@ -1,0 +1,6 @@
+{
+    "version":2,
+    "build":[
+        {"src":"manage.py", "use": "vercel/python"}
+    ]
+}
