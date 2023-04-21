@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-+v0mdj#kh&e2wcjy%jocsxhdbmg)gq^$rz(kjvs!^kts$0htnb
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [".vercel.app"]
 
 
 # Application definition
@@ -41,7 +41,13 @@ DJANGO_APPS = [
 ]
 
 
-INSTALLED_APPS = DJANGO_APPS 
+LOCAL_APPS = [
+    'aplicacion.post', 
+]
+
+THIRD_PARTY_APPS = []
+
+INSTALLED_APPS = DJANGO_APPS +THIRD_PARTY_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
