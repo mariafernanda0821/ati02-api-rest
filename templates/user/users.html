@@ -1,0 +1,21 @@
+{% extends 'user/base.html' %}
+{% load static %}
+{% block content %}
+<section >
+    <h3>Lista de Usuarios</h3>
+	<section class="container d-flex justify-content-start text-center">
+		<section class="row row-cols-auto justify-content-start">
+				{% for user in data %}
+				<section class="col col-3 border border-1 m-2 p-2">
+					<h2>{{ user.id}}</h2>
+					<p>Nombre: {{ user.name }}</p>
+					<p>Usuario: {{ user.username }}</p>
+					<p>Email: {{ user.email }}</p>
+					<a href="{% url 'admin_user:post_user' user.id %}" class="btn btn-dark">Visualizar</a>
+				</section>
+				{% endfor %}
+			</section>
+	</section>
+	
+</section>
+{% endblock content %}
